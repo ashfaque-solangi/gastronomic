@@ -25,7 +25,7 @@ export default function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Utensils className="h-6 w-6 text-foreground" />
+            <Utensils className="h-6 w-6 text-primary" />
             <span className="hidden font-bold sm:inline-block font-headline">
               Gastronomic Hub
             </span>
@@ -36,8 +36,8 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'transition-colors hover:text-foreground/80',
-                  pathname === link.href ? 'text-foreground' : 'text-foreground/60'
+                  'transition-colors hover:text-primary',
+                  pathname === link.href ? 'text-foreground font-semibold' : 'text-foreground/60'
                 )}
               >
                 {link.label}
@@ -61,7 +61,7 @@ export default function Header() {
                   className="mb-6 flex items-center"
                   onClick={() => setIsOpen(false)}
                 >
-                  <Utensils className="mr-2 h-6 w-6" />
+                  <Utensils className="mr-2 h-6 w-6 text-primary" />
                   <span className="font-bold font-headline">Gastronomic Hub</span>
                 </Link>
                 <div className="flex flex-col space-y-3">
@@ -71,8 +71,8 @@ export default function Header() {
                       href={link.href}
                       onClick={() => setIsOpen(false)}
                       className={cn(
-                        'transition-colors hover:text-foreground/80',
-                        pathname === link.href ? 'text-foreground' : 'text-foreground/60'
+                        'transition-colors hover:text-primary',
+                         pathname === link.href ? 'text-foreground font-semibold' : 'text-foreground/60'
                       )}
                     >
                       {link.label}
@@ -84,7 +84,7 @@ export default function Header() {
           </div>
           <div className="flex-1 md:hidden">
             <Link href="/" className="flex items-center justify-center space-x-2">
-              <Utensils className="h-6 w-6" />
+              <Utensils className="h-6 w-6 text-primary" />
               <span className="font-bold font-headline">Gastronomic Hub</span>
             </Link>
           </div>
@@ -92,7 +92,7 @@ export default function Header() {
             <Button variant="ghost" asChild>
               <Link href="/login">Login</Link>
             </Button>
-            <Button asChild className="bg-slate-800 text-white hover:bg-slate-700 dark:bg-slate-200 dark:text-slate-900 dark:hover:bg-slate-300">
+            <Button asChild>
               <Link href="/signup">Sign Up</Link>
             </Button>
           </nav>

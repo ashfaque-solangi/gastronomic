@@ -78,7 +78,7 @@ export default function HeroSlider() {
                       <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-slate-200">
                         {item.description}
                       </p>
-                      <Button asChild size="lg" className="mt-8 bg-white text-slate-900 hover:bg-slate-200 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700">
+                      <Button asChild size="lg" className="mt-8">
                         <Link href={item.href}>{item.buttonText}</Link>
                       </Button>
                     </div>

@@ -151,7 +151,7 @@ export default function AiRecipeTool() {
                     />
                   </CardContent>
                   <CardFooter>
-                    <Button type="submit" disabled={isLoading} className="w-full bg-slate-800 text-white hover:bg-slate-700 dark:bg-slate-200 dark:text-slate-900 dark:hover:bg-slate-300">
+                    <Button type="submit" disabled={isLoading} className="w-full">
                       {isLoading ? (
                         <>
                           <Loader2 className="mr-2 h-4 w-4 animate-spin" />

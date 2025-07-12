@@ -18,12 +18,12 @@ const socialLinks = [
 
 export default function Footer() {
     return (
-        <footer className="bg-muted border-t">
+        <footer className="bg-secondary border-t">
             <div className="container py-12 max-w-screen-2xl">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="flex flex-col items-start col-span-1 md:col-span-1">
                         <Link href="/" className="flex items-center space-x-2 mb-4">
-                            <Utensils className="h-8 w-8 text-foreground" />
+                            <Utensils className="h-8 w-8 text-primary" />
                             <span className="text-xl font-bold font-headline">Gastronomic Hub</span>
                         </Link>
                         <p className="text-muted-foreground text-sm">Your ultimate destination for culinary inspiration and recipes.</p>
@@ -54,7 +54,7 @@ export default function Footer() {
                                 {socialLinks.map((social, index) => {
                                     const Icon = social.icon;
                                     return (
-                                        <Link key={index} href={social.href} className="text-muted-foreground hover:text-foreground transition-colors">
+                                        <Link key={index} href={social.href} className="text-muted-foreground hover:text-primary transition-colors">
                                             <Icon className="h-5 w-5" />
                                             <span className="sr-only">Follow us on {social.name}</span>
                                         </Link>
@@ -65,7 +65,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="bg-muted/50 py-4 border-t">
+            <div className="bg-background py-4 border-t">
                 <div className="container text-center text-sm text-muted-foreground max-w-screen-2xl">
                     &copy; {new Date().getFullYear()} Gastronomic Hub. All Rights Reserved.
                 </div>

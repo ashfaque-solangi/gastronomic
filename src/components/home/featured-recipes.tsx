@@ -43,7 +43,7 @@ const featuredRecipes = [
 
 export default function FeaturedRecipes() {
   return (
-    <section className="py-12 md:py-24 bg-muted">
+    <section className="py-12 md:py-24 bg-secondary">
       <div className="container">
         <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">
@@ -55,7 +55,7 @@ export default function FeaturedRecipes() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {featuredRecipes.map((recipe) => (
-            <Card key={recipe.title} className="overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <Card key={recipe.title} className="overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card">
               <CardHeader className="p-0">
                 <div className="aspect-video relative overflow-hidden">
                   <Image
@@ -74,7 +74,7 @@ export default function FeaturedRecipes() {
                 <p className="text-muted-foreground text-sm mt-2">{recipe.description}</p>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button variant="outline" asChild className="w-full bg-transparent border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white dark:border-slate-200 dark:text-slate-200 dark:hover:bg-slate-200 dark:hover:text-slate-900">
+                <Button variant="outline" asChild className="w-full">
                   <Link href={recipe.href}>View Recipe <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
               </CardFooter>
