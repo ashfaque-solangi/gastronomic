@@ -120,7 +120,7 @@ export default function BlogPage() {
         {blogPosts.map((post) => (
           <Card key={post.title} className="overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card">
             <CardHeader className="p-0">
-              <Link href={post.href} className="block aspect-video relative overflow-hidden">
+              <div className="block aspect-video relative overflow-hidden">
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -128,12 +128,12 @@ export default function BlogPage() {
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   data-ai-hint={post.dataAiHint}
                 />
-              </Link>
+              </div>
             </CardHeader>
             <CardContent className="p-6 flex-grow">
               <Badge variant="outline" className="mb-2">{post.category}</Badge>
               <h2 className="font-headline text-xl leading-snug">
-                <Link href={post.href} className="hover:text-primary transition-colors">{post.title}</Link>
+                {post.title}
               </h2>
               <p className="text-muted-foreground text-sm mt-2">{post.description}</p>
             </CardContent>
@@ -142,9 +142,6 @@ export default function BlogPage() {
                 <p className="font-semibold">{post.author}</p>
                 <p>{post.date}</p>
               </div>
-               <Button variant="outline" asChild className="w-auto">
-                  <Link href={post.href}>Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                </Button>
             </CardFooter>
           </Card>
         ))}

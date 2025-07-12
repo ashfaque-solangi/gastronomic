@@ -113,9 +113,7 @@ export default function ShopPage() {
             </CardContent>
             <CardFooter className="p-6 pt-0 flex justify-between items-center">
                 <p className="font-bold text-lg">{product.price}</p>
-                <Button asChild>
-                  <Link href="#">Add to Cart</Link>
-                </Button>
+                <Button>Add to Cart</Button>
             </CardFooter>
           </Card>
         ))}

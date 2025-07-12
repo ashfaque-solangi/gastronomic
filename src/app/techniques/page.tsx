@@ -58,9 +58,7 @@ export default function TechniquesPage() {
               <p className="text-muted-foreground text-sm">{technique.description}</p>
             </CardContent>
              <CardContent className="p-6 pt-0">
-                 <Button variant="outline" asChild className="w-full">
-                  <Link href={technique.href}>Learn More</Link>
-                </Button>
+                 <Button variant="outline" className="w-full">Learn More</Button>
             </CardContent>
           </Card>
         ))}

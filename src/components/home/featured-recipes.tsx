@@ -74,8 +74,8 @@ export default function FeaturedRecipes() {
                 <p className="text-muted-foreground text-sm mt-2">{recipe.description}</p>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button variant="outline" asChild className="w-full">
-                  <Link href={recipe.href}>View Recipe <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                <Button variant="outline" className="w-full">
+                  View Recipe <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </CardFooter>
             </Card>

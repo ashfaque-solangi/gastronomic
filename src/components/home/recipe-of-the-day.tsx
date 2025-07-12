@@ -78,8 +78,8 @@ export default function RecipeOfTheDay() {
                 </div>
 
                 <div className="pt-4">
-                    <Button asChild size="lg">
-                        <Link href="#">Get Full Recipe <ArrowRight className="ml-2" /></Link>
+                    <Button size="lg">
+                        Get Full Recipe <ArrowRight className="ml-2" />
                     </Button>
                 </div>
             </div>
