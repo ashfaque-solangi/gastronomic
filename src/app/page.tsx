@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="flex flex-col">
+       <h1 className="sr-only">Gastronomic Hub - Your Culinary Companion for recipes, cooking techniques, and ingredient guides.</h1>
       <HeroSlider />
       <Categories />
       <FeaturedRecipes />
