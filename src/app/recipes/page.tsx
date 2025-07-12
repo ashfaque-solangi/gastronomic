@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Recipe Collection',
-  description: 'From quick weeknight meals to elaborate weekend feasts, find the perfect recipe for any occasion. Our collection is constantly growing with delicious and reliable recipes tested by our team.',
+  description: 'Find the perfect recipe for any occasion, from quick meals to elaborate feasts. Our collection features delicious and reliable recipes tested by our team.',
 };
 
 export default function RecipesPage() {

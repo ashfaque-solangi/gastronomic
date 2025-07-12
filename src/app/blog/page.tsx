@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'The Culinary Chronicle Blog',
-  description: 'Explore our digital magazine, featuring exclusive interviews with top chefs, in-depth culinary articles, stunning food photography, and curated recipe collections that tell a story.',
+  description: 'Our digital magazine features chef interviews, culinary articles, and curated recipe collections. Dive into the stories behind the food.',
 };
 
 const blogPosts = [
@@ -132,9 +132,9 @@ export default function BlogPage() {
             </CardHeader>
             <CardContent className="p-6 flex-grow">
               <Badge variant="outline" className="mb-2">{post.category}</Badge>
-              <CardTitle className="font-headline text-xl leading-snug">
+              <h2 className="font-headline text-xl leading-snug">
                 <Link href={post.href} className="hover:text-primary transition-colors">{post.title}</Link>
-              </CardTitle>
+              </h2>
               <p className="text-muted-foreground text-sm mt-2">{post.description}</p>
             </CardContent>
             <CardFooter className="p-6 pt-0 flex justify-between items-center text-sm text-muted-foreground">

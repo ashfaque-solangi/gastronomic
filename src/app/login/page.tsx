@@ -13,7 +13,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Login",
-  description: "Access your Gastronomic Hub account to save recipes, create shopping lists, and engage with our community.",
+  description: "Access your Gastronomic Hub account to save recipes, create shopping lists, and join our vibrant culinary community today.",
 };
 
 export default function LoginPage() {

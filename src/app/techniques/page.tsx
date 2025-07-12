@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Cooking Techniques',
-  description: 'Dive into our comprehensive guides on cooking techniques. From the essential sauté to advanced sous-vide, we cover everything you need to know to cook like a professional.',
+  description: 'Our guides cover techniques from sauté to sous-vide. Learn everything you need to know to start cooking like a professional in your own kitchen.',
 };
 
 
@@ -52,9 +52,9 @@ export default function TechniquesPage() {
               </div>
             </CardHeader>
             <CardContent className="p-6 flex-grow">
-              <CardTitle className="font-headline text-xl leading-snug mb-2">
+              <h2 className="font-headline text-xl leading-snug mb-2">
                 {technique.name}
-              </CardTitle>
+              </h2>
               <p className="text-muted-foreground text-sm">{technique.description}</p>
             </CardContent>
              <CardContent className="p-6 pt-0">

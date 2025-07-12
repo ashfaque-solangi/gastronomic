@@ -68,9 +68,9 @@ export default function FeaturedRecipes() {
                 </div>
               </CardHeader>
               <CardContent className="p-6 flex-grow">
-                <CardTitle className="font-headline text-xl leading-snug">
+                <h3 className="font-headline text-xl leading-snug">
                   {recipe.title}
-                </CardTitle>
+                </h3>
                 <p className="text-muted-foreground text-sm mt-2">{recipe.description}</p>
               </CardContent>
               <CardFooter className="p-6 pt-0">
