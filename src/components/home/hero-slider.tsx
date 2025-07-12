@@ -72,9 +72,9 @@ export default function HeroSlider() {
                     />
                     <div className="absolute inset-0 bg-black/60" />
                     <div className="relative z-10 text-center text-white p-4">
-                      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline">
+                      <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline">
                         {item.title}
-                      </h1>
+                      </h2>
                       <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-slate-200">
                         {item.description}
                       </p>
