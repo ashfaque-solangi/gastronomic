@@ -11,7 +11,7 @@ import Testimonials from '@/components/home/testimonials';
 
 export const metadata: Metadata = {
   title: 'Gastronomic Hub - Your Culinary Companion',
-  description: 'A comprehensive food recipe website for enthusiasts and home cooks, featuring thousands of recipes, expert cooking techniques, detailed ingredient guides, and a powerful AI recipe generator.',
+  description: 'A comprehensive food recipe website for enthusiasts and home cooks, featuring thousands of recipes, expert cooking techniques, and detailed ingredient guides.',
 };
 
 export default function Home() {
