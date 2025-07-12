@@ -6,21 +6,21 @@ const testimonials = [
     {
         name: "Sarah L.",
         role: "Home Cook",
-        avatar: "https://placehold.co/100x100.png",
+        avatar: "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=100&h=100&auto=format&fit=crop",
         dataAiHint: "woman portrait",
         testimonial: "This website has completely transformed my cooking! The recipes are easy to follow and absolutely delicious. The AI tool is a game changer for when I don't know what to make."
     },
     {
         name: "Mike R.",
         role: "Food Blogger",
-        avatar: "https://placehold.co/100x100.png",
+        avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&h=100&auto=format&fit=crop",
         dataAiHint: "man portrait",
         testimonial: "As a food blogger, I'm always looking for inspiration. Gastronomic Hub is my go-to source for new ideas and techniques. The quality of the content is outstanding."
     },
     {
         name: "Jessica P.",
         role: "Busy Mom",
-        avatar: "https://placehold.co/100x100.png",
+        avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&h=100&auto=format&fit=crop",
         dataAiHint: "person smiling",
         testimonial: "Finding quick and healthy meals for my family used to be a struggle. Now, I can find tons of options in minutes. Thank you for making my life so much easier!"
     },

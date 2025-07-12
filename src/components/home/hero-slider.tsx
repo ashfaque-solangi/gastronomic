@@ -16,7 +16,7 @@ import Autoplay from "embla-carousel-autoplay"
 
 const sliderItems = [
   {
-    image: 'https://placehold.co/1600x800.png',
+    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&h=800&auto=format&fit=crop',
     dataAiHint: 'gourmet dish',
     title: 'Discover The Art of Fine Dining',
     description: 'Explore recipes curated by world-renowned chefs.',
@@ -24,7 +24,7 @@ const sliderItems = [
     href: '/blog',
   },
   {
-    image: 'https://placehold.co/1600x800.png',
+    image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1600&h=800&auto=format&fit=crop',
     dataAiHint: 'fresh ingredients',
     title: 'Farm-to-Table Freshness',
     description: 'Learn to cook with the freshest seasonal ingredients.',
@@ -32,7 +32,7 @@ const sliderItems = [
     href: '/ingredients',
   },
   {
-    image: 'https://placehold.co/1600x800.png',
+    image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1600&h=800&auto=format&fit=crop',
     dataAiHint: 'kitchen tools',
     title: 'Equip Your Kitchen Like a Pro',
     description: 'Find the best tools to elevate your cooking.',

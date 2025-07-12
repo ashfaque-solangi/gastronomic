@@ -11,11 +11,11 @@ const communityPosts = [
     id: 1,
     author: {
       name: "VeganVibes",
-      avatar: "https://placehold.co/100x100.png",
+      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&h=100&auto=format&fit=crop",
       dataAiHint: "woman smiling",
     },
     image: {
-      src: "https://placehold.co/600x400.png",
+      src: "https://images.unsplash.com/photo-1542528434-21f768b53472?q=80&w=600&h=400&auto=format&fit=crop",
       alt: "A vibrant vegan curry dish.",
       dataAiHint: "vegan curry",
     },
@@ -26,11 +26,11 @@ const communityPosts = [
     id: 2,
     author: {
       name: "BBQKing",
-      avatar: "https://placehold.co/100x100.png",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&h=100&auto=format&fit=crop",
       dataAiHint: "man grilling",
     },
     image: {
-      src: "https://placehold.co/600x400.png",
+      src: "https://images.unsplash.com/photo-1604891841372-971d2b274c43?q=80&w=600&h=400&auto=format&fit=crop",
       alt: "Perfectly grilled BBQ ribs.",
       dataAiHint: "bbq ribs",
     },
@@ -41,11 +41,11 @@ const communityPosts = [
     id: 3,
     author: {
       name: "PastryQueen",
-      avatar: "https://placehold.co/100x100.png",
+      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&h=100&auto=format&fit=crop",
       dataAiHint: "baker portrait",
     },
     image: {
-      src: "https://placehold.co/600x400.png",
+      src: "https://images.unsplash.com/photo-1562440102-83dfaf14e038?q=80&w=600&h=400&auto=format&fit=crop",
       alt: "A beautiful layered cake with berries.",
       dataAiHint: "berry cake",
     },

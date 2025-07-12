@@ -26,7 +26,7 @@ export default function RecipeOfTheDay() {
         <Card className="overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
           <div className="relative aspect-video lg:aspect-auto">
             <Image
-              src="https://placehold.co/800x600.png"
+              src="https://images.unsplash.com/photo-1604503468817-a1f1227a854d?q=80&w=800&h=600&auto=format&fit=crop"
               alt="Lemon Herb Roasted Chicken"
               fill
               className="object-cover"

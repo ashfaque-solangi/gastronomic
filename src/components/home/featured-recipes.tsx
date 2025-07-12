@@ -13,28 +13,28 @@ import { ArrowRight } from 'lucide-react';
 const featuredRecipes = [
   {
     title: 'Classic Italian Pasta',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=600&h=400&auto=format&fit=crop',
     dataAiHint: 'italian pasta',
     href: '#',
     description: 'A timeless classic that brings the heart of Italy to your plate.'
   },
   {
     title: 'Spicy Thai Green Curry',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1569058242253-92a8c3295932?q=80&w=600&h=400&auto=format&fit=crop',
     dataAiHint: 'thai curry',
     href: '#',
     description: 'Aromatic and vibrant, this curry is a delightful explosion of flavors.'
   },
   {
     title: 'Hearty Beef Stew',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=600&h=400&auto=format&fit=crop',
     dataAiHint: 'beef stew',
     href: '#',
     description: 'Comfort food at its finest, perfect for a cozy evening.'
   },
    {
     title: 'Decadent Chocolate Lava Cake',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1586985289942-d698c1a63c63?q=80&w=600&h=400&auto=format&fit=crop',
     dataAiHint: 'chocolate cake',
     href: '#',
     description: 'A rich and molten chocolate cake that is pure indulgence.'

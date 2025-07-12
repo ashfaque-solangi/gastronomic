@@ -5,15 +5,15 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const techniques = [
-  { name: "Sautéing", image: "https://placehold.co/400x300.png", dataAiHint: "saute pan", description: "Quickly cooking food in a small amount of fat over high heat.", href: "#" },
-  { name: "Roasting", image: "https://placehold.co/400x300.png", dataAiHint: "roasting vegetables", description: "Cooking food with dry heat in an oven, creating a browned exterior.", href: "#" },
-  { name: "Braising", image: "https://placehold.co/400x300.png", dataAiHint: "braised meat", description: "A combination-cooking method that uses both wet and dry heats.", href: "#" },
-  { name: "Grilling", image: "https://placehold.co/400x300.png", dataAiHint: "food grilling", description: "Cooking food over direct heat on a grill, often outdoors.", href: "#" },
-  { name: "Steaming", image: "https://placehold.co/400x300.png", dataAiHint: "steamed vegetables", description: "Cooking with moist heat, which helps retain nutrients and moisture.", href: "#" },
-  { name: "Poaching", image: "https://placehold.co/400x300.png", dataAiHint: "poached egg", description: "Gently cooking food in a liquid, such as water, milk, or stock.", href: "#" },
-  { name: "Blanching", image: "https://placehold.co/400x300.png", dataAiHint: "blanching vegetables", description: "Scalding vegetables in boiling water or steam for a short time.", href: "#" },
-  { name: "Sous-Vide", image: "https://placehold.co/400x300.png", dataAiHint: "sous vide machine", description: "Cooking food in a vacuum-sealed bag in a temperature-controlled water bath.", href: "#" },
-  { name: "Stir-Frying", image: "https://placehold.co/400x300.png", dataAiHint: "stir fry wok", description: "A Chinese cooking technique in which ingredients are fried in a small amount of very hot oil while being stirred in a wok.", href: "#" },
+  { name: "Sautéing", image: "https://images.unsplash.com/photo-1554108343-a4e951793744?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "saute pan", description: "Quickly cooking food in a small amount of fat over high heat.", href: "#" },
+  { name: "Roasting", image: "https://images.unsplash.com/photo-1598511757731-b92e21be8e9d?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "roasting vegetables", description: "Cooking food with dry heat in an oven, creating a browned exterior.", href: "#" },
+  { name: "Braising", image: "https://images.unsplash.com/photo-1567620832903-9fc6debc3e3d?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "braised meat", description: "A combination-cooking method that uses both wet and dry heats.", href: "#" },
+  { name: "Grilling", image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "food grilling", description: "Cooking food over direct heat on a grill, often outdoors.", href: "#" },
+  { name: "Steaming", image: "https://images.unsplash.com/photo-1589454848601-e04870533355?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "steamed vegetables", description: "Cooking with moist heat, which helps retain nutrients and moisture.", href: "#" },
+  { name: "Poaching", image: "https://images.unsplash.com/photo-1599021438202-3bab11a3b19a?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "poached egg", description: "Gently cooking food in a liquid, such as water, milk, or stock.", href: "#" },
+  { name: "Blanching", image: "https://images.unsplash.com/photo-1498654896293-37a310881ce0?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "blanching vegetables", description: "Scalding vegetables in boiling water or steam for a short time.", href: "#" },
+  { name: "Sous-Vide", image: "https://images.unsplash.com/photo-1620353468163-1466a5554359?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "sous vide machine", description: "Cooking food in a vacuum-sealed bag in a temperature-controlled water bath.", href: "#" },
+  { name: "Stir-Frying", image: "https://images.unsplash.com/photo-1585851256333-f5421191a320?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "stir fry wok", description: "A Chinese cooking technique in which ingredients are fried in a small amount of very hot oil while being stirred in a wok.", href: "#" },
 ];
 
 export default function TechniquesPage() {

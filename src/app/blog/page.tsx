@@ -8,7 +8,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const blogPosts = [
   {
     title: "The Art of Sourdough: A Beginner's Guide",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1584020119318-c4fe9ade217a?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "sourdough bread",
     href: "#",
     category: "Baking",
@@ -18,7 +18,7 @@ const blogPosts = [
   },
   {
     title: "A Deep Dive into the World of Spices",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1509358271058-acd22cc93898?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "colorful spices",
     href: "#",
     category: "Techniques",
@@ -28,7 +28,7 @@ const blogPosts = [
   },
   {
     title: "Mastering the Grill: Tips from a BBQ Pitmaster",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "grilling steak",
     href: "#",
     category: "Grilling",
@@ -38,7 +38,7 @@ const blogPosts = [
   },
   {
     title: "The Ultimate Guide to Knife Skills",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "chopping vegetables",
     href: "#",
     category: "Techniques",
@@ -48,7 +48,7 @@ const blogPosts = [
   },
   {
     title: "Seasonal Superfoods: What to Eat in Autumn",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1541544453-614865189255?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "autumn vegetables",
     href: "#",
     category: "Wellness",
@@ -58,7 +58,7 @@ const blogPosts = [
   },
   {
     title: "One-Pot Wonders: 5 Easy Weeknight Dinners",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1598103442387-03775a1ae4a9?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "one pot meal",
     href: "#",
     category: "Quick Meals",
@@ -68,7 +68,7 @@ const blogPosts = [
   },
   {
     title: "The Science of Perfect Pasta",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1621996346565-e326e22e3824?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "making pasta",
     href: "#",
     category: "Cooking",
@@ -78,7 +78,7 @@ const blogPosts = [
   },
   {
     title: "Fermentation for Beginners: Kimchi & Sauerkraut",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1584332213120-1b563406e57a?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "kimchi jars",
     href: "#",
     category: "DIY",
@@ -88,7 +88,7 @@ const blogPosts = [
   },
   {
     title: "Baking with Alternative Flours",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1534951474653-4447434a7541?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "gluten-free baking",
     href: "#",
     category: "Baking",
