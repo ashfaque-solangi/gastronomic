@@ -12,7 +12,7 @@ import { Label } from "@/components/ui/label"
 
 export default function LoginPage() {
   return (
-    <div className="flex items-center justify-center py-12 md:py-24">
+    <div className="flex items-center justify-center px-4 py-12 md:py-24">
       <Card className="mx-auto max-w-sm">
         <CardHeader>
           <CardTitle className="text-2xl font-headline">Login</CardTitle>

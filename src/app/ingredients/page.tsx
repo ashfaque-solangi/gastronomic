@@ -20,7 +20,7 @@ const ingredients = [
 
 export default function IngredientsPage() {
   return (
-    <div className="container py-12 md:py-24">
+    <div className="container px-4 py-12 md:py-24">
       <div className="mx-auto flex max-w-3xl flex-col items-center text-center mb-12">
         <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
           <Leaf className="h-8 w-8 text-primary" />

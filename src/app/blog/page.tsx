@@ -100,7 +100,7 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <div className="container py-12 md:py-24">
+    <div className="container px-4 py-12 md:py-24">
       <div className="mx-auto flex max-w-3xl flex-col items-center text-center mb-12">
         <h1 className="font-headline text-4xl font-bold md:text-5xl">
           The Culinary Chronicle
