@@ -87,7 +87,7 @@ export default function AiRecipeTool() {
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
-            <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary font-medium">
+            <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium">
               AI-Powered Suggestions
             </div>
             <h2 className="text-3xl md:text-4xl font-bold font-headline">
@@ -97,7 +97,7 @@ export default function AiRecipeTool() {
               Tell us the season and what you're in the mood for, and our AI chef will whip up some creative recipe ideas just for you.
             </p>
 
-            <Card className="bg-card">
+            <Card className="bg-card shadow-lg">
               <CardHeader>
                 <CardTitle>Generate Recipes</CardTitle>
                 <CardDescription>
@@ -151,7 +151,7 @@ export default function AiRecipeTool() {
                     />
                   </CardContent>
                   <CardFooter>
-                    <Button type="submit" disabled={isLoading} className="w-full">
+                    <Button type="submit" disabled={isLoading} className="w-full bg-slate-800 text-white hover:bg-slate-700 dark:bg-slate-200 dark:text-slate-900 dark:hover:bg-slate-300">
                       {isLoading ? (
                         <>
                           <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -170,20 +170,20 @@ export default function AiRecipeTool() {
             </Card>
           </div>
           <div className="h-full">
-            <Card className="h-full bg-muted/50 flex flex-col">
+            <Card className="h-full bg-muted/50 flex flex-col shadow-lg">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <ChefHat className="mr-2 text-primary" />
+                  <ChefHat className="mr-2 text-foreground" />
                   AI Recommendations
                 </CardTitle>
                 <CardDescription>
                   Your personalized recipe ideas will appear here.
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex-grow overflow-auto">
+              <CardContent className="flex-grow overflow-auto p-2">
                 {isLoading && (
                   <div className="flex flex-col items-center justify-center h-full space-y-4 text-muted-foreground">
-                    <Loader2 className="h-12 w-12 animate-spin text-primary" />
+                    <Loader2 className="h-12 w-12 animate-spin text-foreground" />
                     <p>Our AI is thinking...</p>
                   </div>
                 )}
@@ -197,7 +197,7 @@ export default function AiRecipeTool() {
                   <Accordion type="single" collapsible className="w-full">
                     {suggestions.recipes.map((recipe, index) => (
                       <AccordionItem value={`item-${index}`} key={index}>
-                        <AccordionTrigger className="font-headline text-left">{recipe.name}</AccordionTrigger>
+                        <AccordionTrigger className="font-headline text-left hover:no-underline">{recipe.name}</AccordionTrigger>
                         <AccordionContent className="space-y-4">
                           <div>
                             <h4 className="font-bold mb-2">Why this recipe?</h4>

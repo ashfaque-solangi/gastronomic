@@ -11,6 +11,8 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Button } from '../ui/button';
+import Autoplay from "embla-carousel-autoplay"
+
 
 const sliderItems = [
   {
@@ -47,6 +49,12 @@ export default function HeroSlider() {
         opts={{
           loop: true,
         }}
+         plugins={[
+          Autoplay({
+            delay: 5000,
+            stopOnInteraction: true,
+          }),
+        ]}
       >
         <CarouselContent>
           {sliderItems.map((item, index) => (
@@ -60,16 +68,17 @@ export default function HeroSlider() {
                       fill
                       className="object-cover"
                       data-ai-hint={item.dataAiHint}
+                      priority={index === 0}
                     />
-                    <div className="absolute inset-0 bg-black/50" />
+                    <div className="absolute inset-0 bg-black/60" />
                     <div className="relative z-10 text-center text-white p-4">
-                      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline text-shadow-lg">
+                      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline">
                         {item.title}
                       </h1>
-                      <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+                      <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-slate-200">
                         {item.description}
                       </p>
-                      <Button asChild size="lg" className="mt-8">
+                      <Button asChild size="lg" className="mt-8 bg-white text-slate-900 hover:bg-slate-200 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700">
                         <Link href={item.href}>{item.buttonText}</Link>
                       </Button>
                     </div>

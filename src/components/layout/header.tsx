@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -17,13 +18,14 @@ const navLinks = [
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Utensils className="h-6 w-6 text-primary" />
+            <Utensils className="h-6 w-6 text-foreground" />
             <span className="hidden font-bold sm:inline-block font-headline">
               Gastronomic Hub
             </span>
@@ -33,7 +35,10 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="transition-colors hover:text-primary"
+                className={cn(
+                  'transition-colors hover:text-foreground/80',
+                  pathname === link.href ? 'text-foreground' : 'text-foreground/60'
+                )}
               >
                 {link.label}
               </Link>
@@ -56,7 +61,7 @@ export default function Header() {
                   className="mb-6 flex items-center"
                   onClick={() => setIsOpen(false)}
                 >
-                  <Utensils className="mr-2 h-6 w-6 text-primary" />
+                  <Utensils className="mr-2 h-6 w-6" />
                   <span className="font-bold font-headline">Gastronomic Hub</span>
                 </Link>
                 <div className="flex flex-col space-y-3">
@@ -65,7 +70,10 @@ export default function Header() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="transition-colors hover:text-primary"
+                      className={cn(
+                        'transition-colors hover:text-foreground/80',
+                        pathname === link.href ? 'text-foreground' : 'text-foreground/60'
+                      )}
                     >
                       {link.label}
                     </Link>
@@ -74,15 +82,17 @@ export default function Header() {
               </SheetContent>
             </Sheet>
           </div>
-          <Link href="/" className="flex items-center space-x-2 md:hidden">
-            <Utensils className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline">Gastronomic Hub</span>
-          </Link>
+          <div className="flex-1 md:hidden">
+            <Link href="/" className="flex items-center justify-center space-x-2">
+              <Utensils className="h-6 w-6" />
+              <span className="font-bold font-headline">Gastronomic Hub</span>
+            </Link>
+          </div>
           <nav className="flex items-center">
             <Button variant="ghost" asChild>
               <Link href="/login">Login</Link>
             </Button>
-            <Button asChild>
+            <Button asChild className="bg-slate-800 text-white hover:bg-slate-700 dark:bg-slate-200 dark:text-slate-900 dark:hover:bg-slate-300">
               <Link href="/signup">Sign Up</Link>
             </Button>
           </nav>
