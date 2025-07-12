@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: 'Gastronomic Hub - Your Culinary Companion',
     template: '%s | Gastronomic Hub',
   },
-  description: 'A comprehensive food recipe website for enthusiasts and home cooks, featuring recipes, cooking techniques, ingredient guides, and an AI recipe generator.',
+  description: 'Your companion for recipes, cooking techniques, and ingredient guides. Discover new dishes and hone your skills with our AI-powered culinary platform.',
   keywords: ['recipes', 'cooking', 'food', 'culinary', 'chef', 'ingredients', 'food blog'],
   verification: {
     // Add your Bing verification code here
