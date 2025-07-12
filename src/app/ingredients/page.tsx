@@ -2,6 +2,12 @@ import { Leaf } from "lucide-react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ingredient Guide',
+  description: 'Discover detailed information about a wide variety of ingredients, from common staples to exotic finds. We provide nutritional data, sourcing tips, and how to best use them in your culinary creations.',
+};
 
 const ingredients = [
   { name: "Tomatoes", image: "https://images.unsplash.com/photo-1561138459-4d8a013409a6?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh tomatoes", season: "Summer", description: "Juicy, red fruits perfect for salads, sauces, and sandwiches." },

@@ -4,6 +4,12 @@ import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'The Culinary Chronicle Blog',
+  description: 'Explore our digital magazine, featuring exclusive interviews with top chefs, in-depth culinary articles, stunning food photography, and curated recipe collections that tell a story.',
+};
 
 const blogPosts = [
   {

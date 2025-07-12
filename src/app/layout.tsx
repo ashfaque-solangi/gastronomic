@@ -6,8 +6,18 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 
 export const metadata: Metadata = {
-  title: 'Gastronomic Hub',
-  description: 'A comprehensive food recipe website for enthusiasts and home cooks.',
+  title: {
+    default: 'Gastronomic Hub - Your Culinary Companion',
+    template: '%s | Gastronomic Hub',
+  },
+  description: 'A comprehensive food recipe website for enthusiasts and home cooks, featuring recipes, cooking techniques, ingredient guides, and an AI recipe generator.',
+  keywords: ['recipes', 'cooking', 'food', 'culinary', 'chef', 'ingredients', 'food blog'],
+  verification: {
+    // Add your Bing verification code here
+    other: {
+      'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
+    },
+  },
 };
 
 export default function RootLayout({

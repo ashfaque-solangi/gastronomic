@@ -3,6 +3,12 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Kitchen Essentials',
+  description: 'Welcome to the Gastronomic Hub marketplace! Find a curated selection of high-quality kitchen tools, gadgets, and specialty ingredients to elevate your cooking experience.',
+};
 
 const products = [
   {

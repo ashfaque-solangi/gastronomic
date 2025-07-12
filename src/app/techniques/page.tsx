@@ -3,6 +3,13 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Cooking Techniques',
+  description: 'Dive into our comprehensive guides on cooking techniques. From the essential sauté to advanced sous-vide, we cover everything you need to know to cook like a professional.',
+};
+
 
 const techniques = [
   { name: "Sautéing", image: "https://images.unsplash.com/photo-1554108343-a4e951793744?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "saute pan", description: "Quickly cooking food in a small amount of fat over high heat.", href: "#" },
