@@ -2,11 +2,11 @@ import Link from 'next/link';
 import { Utensils, Facebook, Twitter, Instagram } from 'lucide-react';
 
 const footerNavLinks = [
-    { href: '/', label: 'Home' },
+    { href: '/recipes', label: 'Recipes' },
     { href: '/ingredients', label: 'Ingredients' },
+    { href: '/techniques', label: 'Techniques' },
     { href: '/shop', label: 'Shop' },
-    { href: '/equipments', label: 'Equipments' },
-    { href: '/magazines', label: 'Magazines' },
+    { href: '/blog', label: 'Blog' },
 ];
 
 const socialLinks = [

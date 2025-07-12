@@ -10,10 +10,10 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
+  { href: '/recipes', label: 'Recipes' },
   { href: '/ingredients', label: 'Ingredients' },
-  { href: '/shop', label: 'Shop' },
-  { href: '/equipments', label: 'Equipments' },
-  { href: '/magazines', label: 'Magazines' },
+  { href: '/techniques', label: 'Techniques' },
+  { href: '/blog', label: 'Blog' },
 ];
 
 export default function Header() {
@@ -37,7 +37,7 @@ export default function Header() {
                 href={link.href}
                 className={cn(
                   'transition-colors hover:text-primary',
-                  pathname === link.href ? 'text-foreground font-semibold' : 'text-foreground/60'
+                  pathname.startsWith(link.href) ? 'text-foreground font-semibold' : 'text-foreground/60'
                 )}
               >
                 {link.label}
@@ -72,7 +72,7 @@ export default function Header() {
                       onClick={() => setIsOpen(false)}
                       className={cn(
                         'transition-colors hover:text-primary',
-                         pathname === link.href ? 'text-foreground font-semibold' : 'text-foreground/60'
+                         pathname.startsWith(link.href) ? 'text-foreground font-semibold' : 'text-foreground/60'
                       )}
                     >
                       {link.label}
@@ -89,6 +89,9 @@ export default function Header() {
             </Link>
           </div>
           <nav className="flex items-center">
+             <Button variant="ghost" asChild>
+              <Link href="/shop">Shop</Link>
+            </Button>
             <Button variant="ghost" asChild>
               <Link href="/login">Login</Link>
             </Button>
