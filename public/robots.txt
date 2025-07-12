@@ -1,6 +1,21 @@
 # See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+#
+# To allow all robots to crawl your site, use the following line:
+# User-agent: *
+# Disallow:
+#
+# To disallow all robots from crawling your site, use the following line:
+# User-agent: *
+# Disallow: /
+#
+# To only allow specific robots to crawl your site, use the following lines:
+# User-agent: Googlebot
+# Disallow:
+#
+# User-agent: *
+# Disallow: /
 
 User-agent: *
-Allow: /
+Disallow:
 
 Sitemap: https://gastronomic-sooty.vercel.app/sitemap.xml
