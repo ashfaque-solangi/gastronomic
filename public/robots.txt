@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.your-gastronomic-hub.com/sitemap.xml
+Sitemap: https://gastronomic-sooty.vercel.app/sitemap.xml
