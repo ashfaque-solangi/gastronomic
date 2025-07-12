@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Ingredient Guide',
-  description: 'Discover detailed information about a wide variety of ingredients, from common staples to exotic finds. We provide nutritional data, sourcing tips, and how to best use them in your culinary creations.',
+  description: 'Explore our guide to ingredients, from common staples to exotic finds. Get nutritional data, sourcing tips, and the best ways to use them in your cooking.',
 };
 
 const ingredients = [
@@ -54,9 +54,9 @@ export default function IngredientsPage() {
             </CardHeader>
             <CardContent className="p-6">
               <Badge variant="secondary" className="mb-2">Best in {ingredient.season}</Badge>
-              <CardTitle className="font-headline text-xl leading-snug mb-2">
+              <h2 className="font-headline text-xl leading-snug mb-2">
                 {ingredient.name}
-              </CardTitle>
+              </h2>
               <p className="text-muted-foreground text-sm">{ingredient.description}</p>
             </CardContent>
           </Card>

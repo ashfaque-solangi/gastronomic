@@ -14,7 +14,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Sign Up",
-  description: "Create an account to join the Gastronomic Hub community. Save your favorite recipes, share your creations, and more.",
+  description: "Create a Gastronomic Hub account to save favorite recipes, share your culinary creations, and join our community of food lovers.",
 };
 
 export default function SignupPage() {

@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Shop Kitchen Essentials',
-  description: 'Welcome to the Gastronomic Hub marketplace! Find a curated selection of high-quality kitchen tools, gadgets, and specialty ingredients to elevate your cooking experience.',
+  description: 'Welcome to our marketplace! Find a curated selection of high-quality kitchen tools, gadgets, and specialty ingredients to elevate your cooking experience.',
 };
 
 const products = [
@@ -106,9 +106,9 @@ export default function ShopPage() {
               </div>
             </CardHeader>
             <CardContent className="p-6 flex-grow">
-              <CardTitle className="font-headline text-xl leading-snug mb-2">
+              <h2 className="font-headline text-xl leading-snug mb-2">
                 {product.name}
-              </CardTitle>
+              </h2>
               <p className="text-muted-foreground text-sm">{product.description}</p>
             </CardContent>
             <CardFooter className="p-6 pt-0 flex justify-between items-center">
