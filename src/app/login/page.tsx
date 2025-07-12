@@ -9,6 +9,12 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Login",
+  description: "Access your Gastronomic Hub account to save recipes, create shopping lists, and engage with our community.",
+};
 
 export default function LoginPage() {
   return (

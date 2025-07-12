@@ -10,6 +10,12 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sign Up",
+  description: "Create an account to join the Gastronomic Hub community. Save your favorite recipes, share your creations, and more.",
+};
 
 export default function SignupPage() {
   return (
