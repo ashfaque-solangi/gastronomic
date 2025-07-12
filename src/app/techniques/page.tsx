@@ -11,6 +11,9 @@ const techniques = [
   { name: "Grilling", image: "https://placehold.co/400x300.png", dataAiHint: "food grilling", description: "Cooking food over direct heat on a grill, often outdoors.", href: "#" },
   { name: "Steaming", image: "https://placehold.co/400x300.png", dataAiHint: "steamed vegetables", description: "Cooking with moist heat, which helps retain nutrients and moisture.", href: "#" },
   { name: "Poaching", image: "https://placehold.co/400x300.png", dataAiHint: "poached egg", description: "Gently cooking food in a liquid, such as water, milk, or stock.", href: "#" },
+  { name: "Blanching", image: "https://placehold.co/400x300.png", dataAiHint: "blanching vegetables", description: "Scalding vegetables in boiling water or steam for a short time.", href: "#" },
+  { name: "Sous-Vide", image: "https://placehold.co/400x300.png", dataAiHint: "sous vide machine", description: "Cooking food in a vacuum-sealed bag in a temperature-controlled water bath.", href: "#" },
+  { name: "Stir-Frying", image: "https://placehold.co/400x300.png", dataAiHint: "stir fry wok", description: "A Chinese cooking technique in which ingredients are fried in a small amount of very hot oil while being stirred in a wok.", href: "#" },
 ];
 
 export default function TechniquesPage() {

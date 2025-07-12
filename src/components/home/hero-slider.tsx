@@ -21,7 +21,7 @@ const sliderItems = [
     title: 'Discover The Art of Fine Dining',
     description: 'Explore recipes curated by world-renowned chefs.',
     buttonText: 'Get Inspired',
-    href: '/magazines',
+    href: '/blog',
   },
   {
     image: 'https://placehold.co/1600x800.png',

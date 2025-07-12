@@ -66,6 +66,36 @@ const blogPosts = [
     author: "Sarah Lee",
     date: "October 8, 2023",
   },
+  {
+    title: "The Science of Perfect Pasta",
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "making pasta",
+    href: "#",
+    category: "Cooking",
+    description: "From semolina to sauce, understand the science that makes pasta one of the world's most beloved foods.",
+    author: "Dr. Elena Rizzo",
+    date: "October 5, 2023",
+  },
+  {
+    title: "Fermentation for Beginners: Kimchi & Sauerkraut",
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "kimchi jars",
+    href: "#",
+    category: "DIY",
+    description: "Dive into the world of fermentation. Learn to make delicious and healthy kimchi and sauerkraut in your own kitchen.",
+    author: "Kenji Tanaka",
+    date: "October 2, 2023",
+  },
+  {
+    title: "Baking with Alternative Flours",
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "gluten-free baking",
+    href: "#",
+    category: "Baking",
+    description: "Explore the delicious world of gluten-free baking with our guide to almond, coconut, and buckwheat flours.",
+    author: "Chloe Adams",
+    date: "September 28, 2023",
+  },
 ];
 
 export default function BlogPage() {

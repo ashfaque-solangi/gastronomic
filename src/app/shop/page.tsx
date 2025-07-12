@@ -47,6 +47,27 @@ const products = [
     price: "$35.00",
     description: "Eco-friendly and gentle on knives, this set includes three different sizes."
   },
+  {
+    name: "Immersion Blender",
+    image: "https://placehold.co/400x300.png",
+    dataAiHint: "immersion blender",
+    price: "$55.00",
+    description: "Perfect for soups, smoothies, and sauces, blending directly in the pot."
+  },
+  {
+    name: "Dutch Oven",
+    image: "https://placehold.co/400x300.png",
+    dataAiHint: "dutch oven",
+    price: "$150.00",
+    description: "Ideal for braises, stews, and even baking bread. A true kitchen workhorse."
+  },
+  {
+    name: "Spice Grinder",
+    image: "https://placehold.co/400x300.png",
+    dataAiHint: "spice grinder",
+    price: "$29.99",
+    description: "Unlock the full flavor of your spices by grinding them fresh at home."
+  },
 ];
 
 export default function ShopPage() {

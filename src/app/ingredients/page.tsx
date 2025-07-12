@@ -13,6 +13,9 @@ const ingredients = [
   { name: "Potatoes", image: "https://placehold.co/400x300.png", dataAiHint: "fresh potatoes", season: "Autumn", description: "A starchy tuber that's incredibly versatile, from fries to mash." },
   { name: "Onions", image: "https://placehold.co/400x300.png", dataAiHint: "yellow onions", season: "All Year", description: "Provides a savory base for countless recipes around the world." },
   { name: "Lemons", image: "https://placehold.co/400x300.png", dataAiHint: "fresh lemons", season: "Winter", description: "Adds a bright, acidic kick to both sweet and savory dishes." },
+  { name: "Cilantro", image: "https://placehold.co/400x300.png", dataAiHint: "fresh cilantro", season: "Spring", description: "A bright, citrusy herb popular in Mexican, Thai, and Vietnamese cooking." },
+  { name: "Bell Peppers", image: "https://placehold.co/400x300.png", dataAiHint: "bell peppers", season: "Summer", description: "Sweet and crunchy, they come in a variety of colors and are great raw or cooked." },
+  { name: "Eggs", image: "https://placehold.co/400x300.png", dataAiHint: "fresh eggs", season: "All Year", description: "An incredibly versatile source of protein, essential for baking and breakfast." },
 ];
 
 export default function IngredientsPage() {
