@@ -7,7 +7,7 @@ import Link from "next/link";
 const products = [
   {
     name: "Chef's Knife",
-    image: "https://images.unsplash.com/photo-1596711644155-52a55f690b23?q=80&w=400&h=300&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1614760114946-5a43555203f2?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "chefs knife",
     price: "$99.99",
     description: "A high-carbon stainless steel knife, perfect for all your chopping needs."
@@ -28,7 +28,7 @@ const products = [
   },
   {
     name: "Stand Mixer",
-    image: "https://images.unsplash.com/photo-1614707267503-3bf4813558f8?q=80&w=400&h=300&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1578619934390-3a1a194a2872?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "stand mixer",
     price: "$299.00",
     description: "A powerful and versatile mixer for dough, batters, and meringues."

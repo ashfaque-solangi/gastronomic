@@ -8,7 +8,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const blogPosts = [
   {
     title: "The Art of Sourdough: A Beginner's Guide",
-    image: "https://images.unsplash.com/photo-1584020119318-c4fe9ade217a?q=80&w=600&h=400&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1599937578381-62d08a55e2a2?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "sourdough bread",
     href: "#",
     category: "Baking",
