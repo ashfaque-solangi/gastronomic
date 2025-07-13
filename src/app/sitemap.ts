@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/recipes',
     '/ingredients',
     '/techniques',
+    '/equipments',
     '/blog',
     '/shop',
     '/login',

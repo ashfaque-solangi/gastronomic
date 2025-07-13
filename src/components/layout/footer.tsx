@@ -5,6 +5,7 @@ const footerNavLinks = [
     { href: '/recipes', label: 'Recipes' },
     { href: '/ingredients', label: 'Ingredients' },
     { href: '/techniques', label: 'Techniques' },
+    { href: '/equipments', label: 'Equipments' },
     { href: '/shop', label: 'Shop' },
     { href: '/blog', label: 'Blog' },
 ];
@@ -19,7 +20,7 @@ const socialLinks = [
 export default function Footer() {
     return (
         <footer className="bg-secondary border-t">
-            <div className="container py-12 max-w-screen-2xl">
+            <div className="container px-4 py-12 max-w-screen-2xl">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="flex flex-col items-start col-span-1 md:col-span-1">
                         <Link href="/" className="flex items-center space-x-2 mb-4">
@@ -66,7 +67,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="bg-background py-4 border-t">
-                <div className="container text-center text-sm text-muted-foreground max-w-screen-2xl">
+                <div className="container px-4 text-center text-sm text-muted-foreground max-w-screen-2xl">
                     &copy; {new Date().getFullYear()} Gastronomic Hub. All Rights Reserved.
                 </div>
             </div>

@@ -44,7 +44,7 @@ const featuredRecipes = [
 export default function FeaturedRecipes() {
   return (
     <section className="py-12 md:py-24 bg-secondary">
-      <div className="container">
+      <div className="container px-4">
         <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">
             Trending Recipes
@@ -73,11 +73,6 @@ export default function FeaturedRecipes() {
                 </h3>
                 <p className="text-muted-foreground text-sm mt-2">{recipe.description}</p>
               </CardContent>
-              <CardFooter className="p-6 pt-0">
-                <Button variant="outline" className="w-full">
-                  View Recipe <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardFooter>
             </Card>
           ))}
         </div>

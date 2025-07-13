@@ -57,7 +57,7 @@ const communityPosts = [
 export default function CommunitySpotlight() {
   return (
     <section className="py-12 md:py-24 bg-background">
-      <div className="container">
+      <div className="container px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">
             From Our Community
@@ -97,11 +97,6 @@ export default function CommunitySpotlight() {
               </CardContent>
             </Card>
           ))}
-        </div>
-        <div className="text-center mt-12">
-            <Button asChild size="lg" variant="outline">
-                <Link href="#">Explore Community <ArrowRight className="ml-2" /></Link>
-            </Button>
         </div>
       </div>
     </section>

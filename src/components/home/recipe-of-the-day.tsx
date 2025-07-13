@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function RecipeOfTheDay() {
   return (
     <section className="py-12 md:py-24 bg-background">
-      <div className="container">
+      <div className="container px-4">
         <div className="text-center mb-12">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium mb-4">
                 <Award className="inline-block w-4 h-4 mr-1 text-primary"/>
@@ -75,12 +75,6 @@ export default function RecipeOfTheDay() {
                             <p className="text-muted-foreground">4-6 people</p>
                         </div>
                     </div>
-                </div>
-
-                <div className="pt-4">
-                    <Button size="lg">
-                        Get Full Recipe <ArrowRight className="ml-2" />
-                    </Button>
                 </div>
             </div>
           </CardContent>
