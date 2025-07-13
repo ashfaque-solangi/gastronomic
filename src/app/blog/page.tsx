@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     title: "The Art of Sourdough: A Beginner's Guide",
-    image: "https://images.unsplash.com/photo-1661829998046-1182751cde94?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1599937578381-62d08a55e2a2?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "sourdough bread",
     href: "#",
     category: "Baking",
@@ -54,7 +54,7 @@ const blogPosts = [
   },
   {
     title: "Seasonal Superfoods: What to Eat in Autumn",
-    image: "https://images.unsplash.com/photo-1635405694284-4a8d10d4e8db?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1541544453-614865189255?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "autumn vegetables",
     href: "#",
     category: "Wellness",
@@ -64,7 +64,7 @@ const blogPosts = [
   },
   {
     title: "One-Pot Wonders: 5 Easy Weeknight Dinners",
-    image: "https://images.unsplash.com/photo-1585863481734-ff56631d441c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fE9uZSUyMFBvdCUyMFdvbmRlcnMlM0ElMjA1JTIwRWFzeSUyMFdlZWtuaWdodCUyMERpbm5lcnN8ZW58MHx8MHx8fDA%3D",
+    image: "https://images.unsplash.com/photo-1598103442387-03775a1ae4a9?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "one pot meal",
     href: "#",
     category: "Quick Meals",
@@ -74,7 +74,7 @@ const blogPosts = [
   },
   {
     title: "The Science of Perfect Pasta",
-    image: "https://images.unsplash.com/photo-1612966893103-790e549a2ab1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fFRoZSUyMFNjaWVuY2UlMjBvZiUyMFBlcmZlY3QlMjBQYXN0YXxlbnwwfHwwfHx8MA%3D%3D",
+    image: "https://images.unsplash.com/photo-1621996346565-e326e22e3824?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "making pasta",
     href: "#",
     category: "Cooking",
@@ -84,7 +84,7 @@ const blogPosts = [
   },
   {
     title: "Fermentation for Beginners: Kimchi & Sauerkraut",
-    image: "https://images.unsplash.com/photo-1648912500365-e0930ea34924?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RmVybWVudGF0aW9uJTIwZm9yJTIwQmVnaW5uZXJzJTNBJTIwS2ltY2hpJTIwJTI2JTIwU2F1ZXJrcmF1dHxlbnwwfHwwfHx8MA%3D%3D",
+    image: "https://images.unsplash.com/photo-1584332213120-1b563406e57a?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "kimchi jars",
     href: "#",
     category: "DIY",
@@ -94,7 +94,7 @@ const blogPosts = [
   },
   {
     title: "Baking with Alternative Flours",
-    image: "https://images.unsplash.com/photo-1529687815525-d5711d9a42df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8QmFraW5nJTIwd2l0aCUyMEFsdGVybmF0aXZlJTIwRmxvdXJzfGVufDB8fDB8fHww",
+    image: "https://images.unsplash.com/photo-1534951474653-4447434a7541?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "gluten-free baking",
     href: "#",
     category: "Baking",
