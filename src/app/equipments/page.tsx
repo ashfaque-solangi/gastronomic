@@ -1,3 +1,4 @@
+
 import { Wrench } from "lucide-react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,15 +12,15 @@ export const metadata: Metadata = {
 };
 
 const equipments = [
-  { name: "Chef's Knife", image: "https://images.unsplash.com/photo-1614760114946-5a43555203f2?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "chefs knife", description: "The most important tool in the kitchen. A sharp, well-balanced chef's knife makes prep work a breeze." },
-  { name: "Cast Iron Skillet", image: "https://images.unsplash.com/photo-1504304793368-25b0a6237a34?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "cast iron skillet", description: "Incredibly versatile for searing, frying, and even baking. Gets better with age." },
-  { name: "Stand Mixer", image: "https://images.unsplash.com/photo-1578619934390-3a1a194a2872?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "stand mixer", description: "A must-have for bakers. Makes quick work of kneading dough and whipping cream." },
-  { name: "Dutch Oven", image: "https://images.unsplash.com/photo-1583196828943-96cca4873d6b?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "dutch oven", description: "Perfect for slow-cooking stews, braises, and soups. Provides even, consistent heat." },
-  { name: "Food Processor", image: "https://images.unsplash.com/photo-1605549120699-27083a339f40?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "food processor", description: "Saves time on chopping, grating, and pureeing. Great for making sauces and dips." },
-  { name: "Blender", image: "https://images.unsplash.com/photo-1565012543929-417c804f375f?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "kitchen blender", description: "Essential for smoothies, soups, and sauces. A high-powered model can handle anything." },
-  { name: "Cutting Board", image: "https://images.unsplash.com/photo-1507048331192-d259247576d3?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "cutting board", description: "Protect your countertops and your knives. Wood or plastic are both great options." },
-  { name: "Measuring Cups & Spoons", image: "https://images.unsplash.com/photo-1596704017321-721a41a89b0a?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "measuring cups", description: "Accuracy is key in baking and cooking. A good set is a fundamental requirement." },
-  { name: "Whisk", image: "https://images.unsplash.com/photo-1596704017321-721a41a89b0a?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "kitchen whisk", description: "For incorporating air into egg whites or cream, and for emulsifying dressings." },
+  { name: "Chef's Knife", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c3f?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "chefs knife", description: "The most important tool in the kitchen. A sharp, well-balanced chef's knife makes prep work a breeze." },
+  { name: "Cast Iron Skillet", image: "https://images.unsplash.com/photo-1601205165388-40345d4a138c?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "cast iron skillet", description: "Incredibly versatile for searing, frying, and even baking. Gets better with age." },
+  { name: "Stand Mixer", image: "https://images.unsplash.com/photo-1618519369014-517a94c1b502?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "stand mixer", description: "A must-have for bakers. Makes quick work of kneading dough and whipping cream." },
+  { name: "Dutch Oven", image: "https://images.unsplash.com/photo-1598448555209-967a216e545e?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "dutch oven", description: "Perfect for slow-cooking stews, braises, and soups. Provides even, consistent heat." },
+  { name: "Food Processor", image: "https://images.unsplash.com/photo-1605549120713-3563a62862f1?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "food processor", description: "Saves time on chopping, grating, and pureeing. Great for making sauces and dips." },
+  { name: "Blender", image: "https://images.unsplash.com/photo-1594411993481-4286241a87e5?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "kitchen blender", description: "Essential for smoothies, soups, and sauces. A high-powered model can handle anything." },
+  { name: "Cutting Board", image: "https://images.unsplash.com/photo-1549298236-83605c03c5cf?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "cutting board", description: "Protect your countertops and your knives. Wood or plastic are both great options." },
+  { name: "Measuring Cups & Spoons", image: "https://images.unsplash.com/photo-1601614270154-10bde403254c?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "measuring cups", description: "Accuracy is key in baking and cooking. A good set is a fundamental requirement." },
+  { name: "Whisk", image: "https://images.unsplash.com/photo-1542317855-322191599818?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "kitchen whisk", description: "For incorporating air into egg whites or cream, and for emulsifying dressings." },
 ];
 
 export default function EquipmentsPage() {

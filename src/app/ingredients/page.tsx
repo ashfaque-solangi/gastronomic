@@ -1,3 +1,4 @@
+
 import { Leaf } from "lucide-react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,18 +11,18 @@ export const metadata: Metadata = {
 };
 
 const ingredients = [
-  { name: "Tomatoes", image: "https://images.unsplash.com/photo-1561138459-4d8a013409a6?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh tomatoes", season: "Summer", description: "Juicy, red fruits perfect for salads, sauces, and sandwiches." },
-  { name: "Avocado", image: "https://images.unsplash.com/photo-1601035231782-427a275727e4?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "ripe avocado", season: "All Year", description: "Creamy and rich in healthy fats, great for toast and guacamole." },
-  { name: "Garlic", image: "https://images.unsplash.com/photo-1608988242442-9a7c6a9b40b1?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "garlic bulbs", season: "All Year", description: "Aromatic and pungent, a foundational ingredient in many cuisines." },
-  { name: "Basil", image: "https://images.unsplash.com/photo-1604467795338-02d327a24913?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh basil", season: "Summer", description: "A sweet and fragrant herb, essential for pesto and Italian dishes." },
-  { name: "Chicken", image: "https://images.unsplash.com/photo-1604503468817-a1f1227a854d?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "raw chicken", season: "All Year", description: "A versatile lean protein that can be roasted, grilled, or fried." },
-  { name: "Salmon", image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "salmon fillet", season: "Spring", description: "An oily fish rich in omega-3s, delicious when baked or pan-seared." },
-  { name: "Potatoes", image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh potatoes", season: "Autumn", description: "A starchy tuber that's incredibly versatile, from fries to mash." },
-  { name: "Onions", image: "https://images.unsplash.com/photo-1587049352851-d481dd275f10?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "yellow onions", season: "All Year", description: "Provides a savory base for countless recipes around the world." },
-  { name: "Lemons", image: "https://images.unsplash.com/photo-1587496679742-503a7a998958?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh lemons", season: "Winter", description: "Adds a bright, acidic kick to both sweet and savory dishes." },
-  { name: "Cilantro", image: "https://images.unsplash.com/photo-1574574921636-e61899147d3c?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh cilantro", season: "Spring", description: "A bright, citrusy herb popular in Mexican, Thai, and Vietnamese cooking." },
-  { name: "Bell Peppers", image: "https://images.unsplash.com/photo-1570535495570-a5446187a552?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "bell peppers", season: "Summer", description: "Sweet and crunchy, they come in a variety of colors and are great raw or cooked." },
-  { name: "Eggs", image: "https://images.unsplash.com/photo-1587486913049-52fc82937636?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh eggs", season: "All Year", description: "An incredibly versatile source of protein, essential for baking and breakfast." },
+  { name: "Tomatoes", image: "https://images.unsplash.com/photo-1617470702138-c84848419632?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh tomatoes", season: "Summer", description: "Juicy, red fruits perfect for salads, sauces, and sandwiches." },
+  { name: "Avocado", image: "https://images.unsplash.com/photo-1528825871115-3581a5387919?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "ripe avocado", season: "All Year", description: "Creamy and rich in healthy fats, great for toast and guacamole." },
+  { name: "Garlic", image: "https://images.unsplash.com/photo-1540100481333-72124de552e6?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "garlic bulbs", season: "All Year", description: "Aromatic and pungent, a foundational ingredient in many cuisines." },
+  { name: "Basil", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh basil", season: "Summer", description: "A sweet and fragrant herb, essential for pesto and Italian dishes." },
+  { name: "Chicken", image: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "raw chicken", season: "All Year", description: "A versatile lean protein that can be roasted, grilled, or fried." },
+  { name: "Salmon", image: "https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "salmon fillet", season: "Spring", description: "An oily fish rich in omega-3s, delicious when baked or pan-seared." },
+  { name: "Potatoes", image: "https://images.unsplash.com/photo-1590324831862-2841449741f2?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh potatoes", season: "Autumn", description: "A starchy tuber that's incredibly versatile, from fries to mash." },
+  { name: "Onions", image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "yellow onions", season: "All Year", description: "Provides a savory base for countless recipes around the world." },
+  { name: "Lemons", image: "https://images.unsplash.com/photo-1574316234321-3965a7f43393?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh lemons", season: "Winter", description: "Adds a bright, acidic kick to both sweet and savory dishes." },
+  { name: "Cilantro", image: "https://images.unsplash.com/photo-1628109343494-b74457782333?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh cilantro", season: "Spring", description: "A bright, citrusy herb popular in Mexican, Thai, and Vietnamese cooking." },
+  { name: "Bell Peppers", image: "https://images.unsplash.com/photo-1567637209939-a73b2457d3a7?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "bell peppers", season: "Summer", description: "Sweet and crunchy, they come in a variety of colors and are great raw or cooked." },
+  { name: "Eggs", image: "https://images.unsplash.com/photo-1598985172252-094154a11f20?q=80&w=400&h=300&auto=format&fit=crop", dataAiHint: "fresh eggs", season: "All Year", description: "An incredibly versatile source of protein, essential for baking and breakfast." },
 ];
 
 export default function IngredientsPage() {

@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -13,28 +14,28 @@ import { ArrowRight } from 'lucide-react';
 const featuredRecipes = [
   {
     title: 'Classic Italian Pasta',
-    image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=600&h=400&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1595295333158-4742f28fbd85?q=80&w=600&h=400&auto=format&fit=crop',
     dataAiHint: 'italian pasta',
     href: '#',
     description: 'A timeless classic that brings the heart of Italy to your plate.'
   },
   {
     title: 'Spicy Thai Green Curry',
-    image: 'https://images.unsplash.com/photo-1569058242253-92a8c3295932?q=80&w=600&h=400&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1572455044439-c1a3a4be45a8?q=80&w=600&h=400&auto=format&fit=crop',
     dataAiHint: 'thai curry',
     href: '#',
     description: 'Aromatic and vibrant, this curry is a delightful explosion of flavors.'
   },
   {
     title: 'Hearty Beef Stew',
-    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=600&h=400&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1604537466507-910d6d5165a2?q=80&w=600&h=400&auto=format&fit=crop',
     dataAiHint: 'beef stew',
     href: '#',
     description: 'Comfort food at its finest, perfect for a cozy evening.'
   },
    {
     title: 'Decadent Chocolate Lava Cake',
-    image: 'https://images.unsplash.com/photo-1586985289942-d698c1a63c63?q=80&w=600&h=400&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1610444043914-00122e4d5ed6?q=80&w=600&h=400&auto=format&fit=crop',
     dataAiHint: 'chocolate cake',
     href: '#',
     description: 'A rich and molten chocolate cake that is pure indulgence.'
