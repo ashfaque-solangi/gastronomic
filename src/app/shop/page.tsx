@@ -1,18 +1,16 @@
 
-import { ShoppingCart } from "lucide-react";
+'use client';
+
+import { ShoppingCart, Check } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import Link from "next/link";
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Shop Kitchen Essentials',
-  description: 'Welcome to our marketplace! Find a curated selection of high-quality kitchen tools, gadgets, and specialty ingredients to elevate your cooking experience.',
-};
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 const products = [
   {
+    id: "prod_001",
     name: "Chef's Knife",
     image: "https://images.unsplash.com/photo-1620216464293-8ca6a203e053?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "chefs knife",
@@ -20,6 +18,7 @@ const products = [
     description: "A high-carbon stainless steel knife, perfect for all your chopping needs."
   },
   {
+    id: "prod_002",
     name: "Cast Iron Skillet",
     image: "https://images.unsplash.com/photo-1549618112-25801f9f5926?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "cast iron skillet",
@@ -27,6 +26,7 @@ const products = [
     description: "Pre-seasoned and ready to use for searing, sautéing, baking, and more."
   },
   {
+    id: "prod_003",
     name: "Digital Kitchen Scale",
     image: "https://images.unsplash.com/photo-1594955745749-9486a38b5523?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "kitchen scale",
@@ -34,6 +34,7 @@ const products = [
     description: "Achieve precision in your baking and cooking with this easy-to-read scale."
   },
   {
+    id: "prod_004",
     name: "Stand Mixer",
     image: "https://images.unsplash.com/photo-1544132808-b1c43d55030f?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "stand mixer",
@@ -41,6 +42,7 @@ const products = [
     description: "A powerful and versatile mixer for dough, batters, and meringues."
   },
   {
+    id: "prod_005",
     name: "Non-stick Pan Set",
     image: "https://images.unsplash.com/photo-1574967399899-764957a72be0?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "pan set",
@@ -48,6 +50,7 @@ const products = [
     description: "Durable and easy to clean, this set is a kitchen essential for everyday cooking."
   },
   {
+    id: "prod_006",
     name: "Bamboo Cutting Board Set",
     image: "https://images.unsplash.com/photo-1628109343494-b74457782333?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "cutting board",
@@ -55,6 +58,7 @@ const products = [
     description: "Eco-friendly and gentle on knives, this set includes three different sizes."
   },
   {
+    id: "prod_007",
     name: "Immersion Blender",
     image: "https://images.unsplash.com/photo-1618519369014-517a94c1b502?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "immersion blender",
@@ -62,6 +66,7 @@ const products = [
     description: "Perfect for soups, smoothies, and sauces, blending directly in the pot."
   },
   {
+    id: "prod_008",
     name: "Dutch Oven",
     image: "https://images.unsplash.com/photo-1601205165388-40345d4a138c?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "dutch oven",
@@ -69,6 +74,7 @@ const products = [
     description: "Ideal for braises, stews, and even baking bread. A true kitchen workhorse."
   },
   {
+    id: "prod_009",
     name: "Spice Grinder",
     image: "https://images.unsplash.com/photo-1516393593254-949246f480ce?q=80&w=400&h=300&auto=format&fit=crop",
     dataAiHint: "spice grinder",
@@ -78,6 +84,15 @@ const products = [
 ];
 
 export default function ShopPage() {
+  const [addedToCart, setAddedToCart] = useState<string[]>([]);
+
+  const handleAddToCart = (productId: string) => {
+    setAddedToCart(prev => [...prev, productId]);
+    setTimeout(() => {
+        setAddedToCart(prev => prev.filter(id => id !== productId));
+    }, 2000); // Revert back after 2 seconds
+  };
+
   return (
     <div className="container px-4 py-12 md:py-24">
       <div className="mx-auto flex max-w-3xl flex-col items-center text-center mb-12">
@@ -88,13 +103,13 @@ export default function ShopPage() {
           Curated Kitchen Essentials
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          Welcome to the Gastronomic Hub marketplace! Here you'll find a curated selection of high-quality kitchen tools, gadgets, and specialty ingredients to elevate your cooking experience.
+          Welcome to the Gastronomic Hub marketplace! Here you'll find a curated selection of high-quality kitchen tools, gadgets, and specialty ingredients.
         </p>
       </div>
 
        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product) => (
-          <Card key={product.name} className="overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <Card key={product.id} className="overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <CardHeader className="p-0">
                <div className="aspect-video relative overflow-hidden">
                 <Image
@@ -114,7 +129,15 @@ export default function ShopPage() {
             </CardContent>
             <CardFooter className="p-6 pt-0 flex justify-between items-center">
                 <p className="font-bold text-lg">{product.price}</p>
-                <Button>Add to Cart</Button>
+                <Button onClick={() => handleAddToCart(product.id)} disabled={addedToCart.includes(product.id)} className={cn(addedToCart.includes(product.id) && "bg-green-500 hover:bg-green-600")}>
+                    {addedToCart.includes(product.id) ? (
+                        <>
+                            <Check className="mr-2 h-4 w-4" /> Added
+                        </>
+                    ) : (
+                        "Add to Cart"
+                    )}
+                </Button>
             </CardFooter>
           </Card>
         ))}

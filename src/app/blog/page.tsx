@@ -17,7 +17,7 @@ const blogPosts = [
     title: "The Art of Sourdough: A Beginner's Guide",
     image: "https://images.unsplash.com/photo-1589067334259-86c32e495393?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "sourdough bread",
-    href: "#",
+    href: "/blog/art-of-sourdough",
     category: "Baking",
     description: "Unlock the secrets to baking the perfect loaf of sourdough bread at home. From starter to bake, we've got you covered.",
     author: "Jane Doe",
@@ -27,7 +27,7 @@ const blogPosts = [
     title: "A Deep Dive into the World of Spices",
     image: "https://images.unsplash.com/photo-1600962815123-627882252a12?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "colorful spices",
-    href: "#",
+    href: "/blog/world-of-spices",
     category: "Techniques",
     description: "Explore the history and use of common and exotic spices to elevate your everyday cooking to a new level.",
     author: "John Smith",
@@ -37,7 +37,7 @@ const blogPosts = [
     title: "Mastering the Grill: Tips from a BBQ Pitmaster",
     image: "https://images.unsplash.com/photo-1594041682319-1423f9b3f34d?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "grilling steak",
-    href: "#",
+    href: "/blog/mastering-the-grill",
     category: "Grilling",
     description: "Fire up the grill with confidence. Learn the best techniques for grilling meats and vegetables to perfection.",
     author: "Mike Richards",
@@ -47,7 +47,7 @@ const blogPosts = [
     title: "The Ultimate Guide to Knife Skills",
     image: "https://images.unsplash.com/photo-1620216464293-8ca6a203e053?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "chopping vegetables",
-    href: "#",
+    href: "/blog/knife-skills-guide",
     category: "Techniques",
     description: "A sharp knife is a chef's best friend. Learn the essential cuts that will make you faster and more efficient in the kitchen.",
     author: "Emily Chen",
@@ -57,7 +57,7 @@ const blogPosts = [
     title: "Seasonal Superfoods: What to Eat in Autumn",
     image: "https://images.unsplash.com/photo-1601205164923-820551722218?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "autumn vegetables",
-    href: "#",
+    href: "/blog/seasonal-superfoods-autumn",
     category: "Wellness",
     description: "Discover the most nutritious and delicious foods that autumn has to offer, from pumpkins to pomegranates.",
     author: "Dr. Alan Green",
@@ -67,7 +67,7 @@ const blogPosts = [
     title: "One-Pot Wonders: 5 Easy Weeknight Dinners",
     image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "one pot meal",
-    href: "#",
+    href: "/blog/one-pot-wonders",
     category: "Quick Meals",
     description: "Spend less time cleaning and more time enjoying. These five one-pot recipes are perfect for busy weeknights.",
     author: "Sarah Lee",
@@ -77,7 +77,7 @@ const blogPosts = [
     title: "The Science of Perfect Pasta",
     image: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "making pasta",
-    href: "#",
+    href: "/blog/science-of-pasta",
     category: "Cooking",
     description: "From semolina to sauce, understand the science that makes pasta one of the world's most beloved foods.",
     author: "Dr. Elena Rizzo",
@@ -87,7 +87,7 @@ const blogPosts = [
     title: "Fermentation for Beginners: Kimchi & Sauerkraut",
     image: "https://images.unsplash.com/photo-1594313223274-4264665cf1d2?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "kimchi jars",
-    href: "#",
+    href: "/blog/fermentation-for-beginners",
     category: "DIY",
     description: "Dive into the world of fermentation. Learn to make delicious and healthy kimchi and sauerkraut in your own kitchen.",
     author: "Kenji Tanaka",
@@ -97,7 +97,7 @@ const blogPosts = [
     title: "Baking with Alternative Flours",
     image: "https://images.unsplash.com/photo-1545609232-603411a03649?q=80&w=600&h=400&auto=format&fit=crop",
     dataAiHint: "gluten-free baking",
-    href: "#",
+    href: "/blog/alternative-flours",
     category: "Baking",
     description: "Explore the delicious world of gluten-free baking with our guide to almond, coconut, and buckwheat flours.",
     author: "Chloe Adams",
@@ -119,32 +119,38 @@ export default function BlogPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogPosts.map((post) => (
-          <Card key={post.title} className="overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card">
-            <CardHeader className="p-0">
-              <div className="block aspect-video relative overflow-hidden">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  data-ai-hint={post.dataAiHint}
-                />
-              </div>
-            </CardHeader>
-            <CardContent className="p-6 flex-grow">
-              <Badge variant="outline" className="mb-2">{post.category}</Badge>
-              <h2 className="font-headline text-xl leading-snug">
-                {post.title}
-              </h2>
-              <p className="text-muted-foreground text-sm mt-2">{post.description}</p>
-            </CardContent>
-            <CardFooter className="p-6 pt-0 flex justify-between items-center text-sm text-muted-foreground">
-              <div>
-                <p className="font-semibold">{post.author}</p>
-                <p>{post.date}</p>
-              </div>
-            </CardFooter>
-          </Card>
+          <Link href={post.href} key={post.title}>
+            <Card className="overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card h-full">
+              <CardHeader className="p-0">
+                <div className="block aspect-video relative overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    data-ai-hint={post.dataAiHint}
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="p-6 flex-grow">
+                <Badge variant="outline" className="mb-2">{post.category}</Badge>
+                <h2 className="font-headline text-xl leading-snug">
+                  {post.title}
+                </h2>
+                <p className="text-muted-foreground text-sm mt-2">{post.description}</p>
+              </CardContent>
+              <CardFooter className="p-6 pt-0 flex justify-between items-center text-sm text-muted-foreground">
+                <div>
+                  <p className="font-semibold">{post.author}</p>
+                  <p>{post.date}</p>
+                </div>
+                <div className="flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span>Read More</span>
+                  <ArrowRight className="w-4 h-4"/>
+                </div>
+              </CardFooter>
+            </Card>
+          </Link>
         ))}
       </div>
     </div>
