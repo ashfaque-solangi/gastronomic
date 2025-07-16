@@ -83,11 +83,11 @@ export default function AiRecipeTool() {
   }
 
   return (
-    <section id="ai-tool" className="py-12 md:py-24 bg-background">
+    <section id="ai-tool" className="py-12 md:py-24 bg-secondary">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
-            <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium">
+            <div className="inline-block rounded-lg bg-primary/10 text-primary px-3 py-1 text-sm font-medium">
               AI-Powered Suggestions
             </div>
             <h2 className="text-3xl md:text-4xl font-bold font-headline">
@@ -170,10 +170,10 @@ export default function AiRecipeTool() {
             </Card>
           </div>
           <div className="h-full">
-            <Card className="h-full bg-muted/50 flex flex-col shadow-lg">
+            <Card className="h-full bg-background flex flex-col shadow-lg">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <ChefHat className="mr-2 text-foreground" />
+                  <ChefHat className="mr-2 text-primary" />
                   AI Recommendations
                 </CardTitle>
                 <CardDescription>
@@ -183,13 +183,13 @@ export default function AiRecipeTool() {
               <CardContent className="flex-grow overflow-auto p-2">
                 {isLoading && (
                   <div className="flex flex-col items-center justify-center h-full space-y-4 text-muted-foreground">
-                    <Loader2 className="h-12 w-12 animate-spin text-foreground" />
+                    <Loader2 className="h-12 w-12 animate-spin text-primary" />
                     <p>Our AI is thinking...</p>
                   </div>
                 )}
                 {!isLoading && !suggestions && (
                   <div className="flex flex-col items-center justify-center h-full text-center text-muted-foreground p-8">
-                     <ChefHat className="h-16 w-16 mb-4" />
+                     <ChefHat className="h-16 w-16 mb-4 text-primary/70" />
                      <p>Ready to cook up some magic? <br/>Let's get some delicious ideas flowing!</p>
                   </div>
                 )}
