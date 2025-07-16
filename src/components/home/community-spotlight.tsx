@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, MessageCircle } from "lucide-react";
@@ -11,11 +12,11 @@ const communityPosts = [
     id: 1,
     author: {
       name: "VeganVibes",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&h=100&auto=format&fit=crop",
+      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&h=100&auto=format&fit=crop",
       dataAiHint: "woman smiling",
     },
     image: {
-      src: "https://images.unsplash.com/photo-1542528434-21f768b53472?q=80&w=600&h=400&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?q=80&w=600&h=400&auto=format&fit=crop",
       alt: "A vibrant vegan curry dish.",
       dataAiHint: "vegan curry",
     },
@@ -30,7 +31,7 @@ const communityPosts = [
       dataAiHint: "man grilling",
     },
     image: {
-      src: "https://images.unsplash.com/photo-1604891841372-971d2b274c43?q=80&w=600&h=400&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=600&h=400&auto=format&fit=crop",
       alt: "Perfectly grilled BBQ ribs.",
       dataAiHint: "bbq ribs",
     },
@@ -41,11 +42,11 @@ const communityPosts = [
     id: 3,
     author: {
       name: "PastryQueen",
-      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&h=100&auto=format&fit=crop",
+      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&h=100&auto=format&fit=crop",
       dataAiHint: "baker portrait",
     },
     image: {
-      src: "https://images.unsplash.com/photo-1562440102-83dfaf14e038?q=80&w=600&h=400&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&h=400&auto=format&fit=crop",
       alt: "A beautiful layered cake with berries.",
       dataAiHint: "berry cake",
     },
@@ -57,7 +58,7 @@ const communityPosts = [
 export default function CommunitySpotlight() {
   return (
     <section className="py-12 md:py-24 bg-background">
-      <div className="container">
+      <div className="container px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">
             From Our Community
@@ -97,11 +98,6 @@ export default function CommunitySpotlight() {
               </CardContent>
             </Card>
           ))}
-        </div>
-        <div className="text-center mt-12">
-            <Button asChild size="lg" variant="outline">
-                <Link href="#">Explore Community <ArrowRight className="ml-2" /></Link>
-            </Button>
         </div>
       </div>
     </section>

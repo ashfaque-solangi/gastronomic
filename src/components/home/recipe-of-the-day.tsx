@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Award, Clock, Star, Users } from "lucide-react";
@@ -9,7 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function RecipeOfTheDay() {
   return (
     <section className="py-12 md:py-24 bg-background">
-      <div className="container">
+      <div className="container px-4">
         <div className="text-center mb-12">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium mb-4">
                 <Award className="inline-block w-4 h-4 mr-1 text-primary"/>
@@ -26,7 +27,7 @@ export default function RecipeOfTheDay() {
         <Card className="overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
           <div className="relative aspect-video lg:aspect-auto">
             <Image
-              src="https://images.unsplash.com/photo-1604503468817-a1f1227a854d?q=80&w=800&h=600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1599305221447-3a6d62a98f40?q=80&w=800&h=600&auto=format&fit=crop"
               alt="Lemon Herb Roasted Chicken"
               fill
               className="object-cover"
@@ -75,12 +76,6 @@ export default function RecipeOfTheDay() {
                             <p className="text-muted-foreground">4-6 people</p>
                         </div>
                     </div>
-                </div>
-
-                <div className="pt-4">
-                    <Button asChild size="lg">
-                        <Link href="#">Get Full Recipe <ArrowRight className="ml-2" /></Link>
-                    </Button>
                 </div>
             </div>
           </CardContent>
