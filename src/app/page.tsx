@@ -12,6 +12,10 @@ import Testimonials from '@/components/home/testimonials';
 export const metadata: Metadata = {
   title: 'Gastronomic Hub - Your Culinary Companion',
   description: 'A comprehensive food recipe website for enthusiasts and home cooks, featuring thousands of recipes, expert cooking techniques, and detailed ingredient guides.',
+  robots: 'index, follow',
+  alternates: {
+    canonical: 'https://gastronomic-sooty.vercel.app/',
+  },
 };
 
 export default function Home() {

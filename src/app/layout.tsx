@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   verification: {
     // Add your Bing verification code here
     other: {
-      'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
+      'msvalidate.01': '055814B1CCB75DB7C73513A1F8D13B18',
     },
   },
 };
