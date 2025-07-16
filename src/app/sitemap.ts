@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://www.your-gastronomic-hub.com';
+const BASE_URL = 'https://gastronomic-sooty.vercel.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
