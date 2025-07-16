@@ -13,6 +13,7 @@ const navLinks = [
   { href: '/recipes', label: 'Recipes' },
   { href: '/ingredients', label: 'Ingredients' },
   { href: '/techniques', label: 'Techniques' },
+  { href: '/shop', label: 'Shop' },
   { href: '/blog', label: 'Blog' },
 ];
 
@@ -89,9 +90,6 @@ export default function Header() {
             </Link>
           </div>
           <nav className="flex items-center">
-             <Button variant="ghost" asChild>
-              <Link href="/shop">Shop</Link>
-            </Button>
             <Button variant="ghost" asChild>
               <Link href="/login">Login</Link>
             </Button>
