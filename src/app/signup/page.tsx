@@ -22,7 +22,7 @@ export default function SignupPage() {
     <div className="flex items-center justify-center px-4 py-12 md:py-24">
       <Card className="mx-auto max-w-sm">
         <CardHeader>
-          <CardTitle className="text-xl font-headline">Sign Up</CardTitle>
+          <CardTitle as="h1" className="text-xl font-headline">Sign Up</CardTitle>
           <CardDescription>
             Enter your information to create an account
           </CardDescription>
